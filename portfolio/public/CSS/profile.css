@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-brand {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.navbar {
+    background-color: rgba(56, 56, 55, 0.575) !important;
+}
+
+.navbar-nav a {
+    color: white!important;
+    font-weight: bold;
+}
+
+
+/* **************end navbar************* */
+
+.home {
+    width: auto;
+    height: 100vh;
+    background-image: url(../img/profile.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.back {
+    display: block;
+    background: #000;
+    background: rgba(0, 0, 0, 0.5);
+    color: #FFF;
+    width: auto;
+    height: 100vh;
+}
+
+.home h4 {
+    color: #ffa500;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.home h2 {
+    color: white!important;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.home h5 {
+    color: white!important;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.paragraph {
+    margin-top: 20%;
+}
+
+
+/* ******************End Home******************* */
+
+
+/* Start About section */
+
+.about {
+    height: auto;
+    width: 100%;
+    /* background-color: black !important; */
+    padding: 5%;
+}
+
+.about .profile {
+    padding-top: 40px;
+}
+
+.about .profile img {
+    height: 400px;
+    width: 350px;
+}
+
+.about .about-me {
+    padding-top: 80px;
+}
+
+
+/**************End About section******************/
+
+
+/*************tart Work section**********************/
+
+.work {
+    height: auto;
+    width: 100%;
+    background-color: black !important;
+    padding: 5%;
+}
+
+.card-body a {
+    text-decoration: none;
+    color: white;
+}
+
+.work .card-deck {
+    margin-top: 5%;
+}
+
+.work .card-deck .card {
+    transition: all 0.2s ease;
+    background: rgb(58, 55, 55);
+    color: white;
+}
+
+.work .card-deck .card:hover {
+    transform: scale(1.07);
+    background: crimson;
+    color: white;
+}
+
+
+/**************End work section******************/
+
+
+/*****************Start Skills Section****************/
+
+.skill-text,
+.skill-lang {
+    padding-top: 5%;
+}
+
+.skill-text p {
+    padding-right: 20px;
+}
+
+.skill {
+    height: auto;
+    width: 100%;
+    padding: 5%;
+}
+
+.heading {
+    padding-top: 10px;
+}
+
+
+/* *******************End Skill************* */
+
+.contact {
+    height: auto;
+    width: 100%;
+    /* background-color: black !important; */
+    padding: 5%;
+}
