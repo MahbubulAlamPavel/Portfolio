@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .navbar-brand {
     font-size: 25px;
     font-weight: bold;
@@ -10,6 +14,18 @@
 
 .navbar {
     background-color: rgba(56, 56, 55, 0.575) !important;
+}
+
+.navbar.sticky {
+    background: rgb(250, 187, 70)!important;
+}
+
+.navbar.sticky a {
+    color: black!important;
+}
+
+.navbar-nav a:hover {
+    color: rgb(235, 50, 50) !important;
 }
 
 .navbar-nav a {
@@ -151,6 +167,46 @@
 .contact {
     height: auto;
     width: 100%;
-    /* background-color: black !important; */
+    background-color: black !important;
     padding: 5%;
+}
+
+.profile,
+.contact-me {
+    padding-top: 5%;
+}
+
+.profile h6 {
+    padding-right: 20px;
+}
+
+#social-fb:hover {
+    color: #3B5998;
+}
+
+#social-linkin:hover {
+    color: #4875B4;
+}
+
+#social-git:hover {
+    color: #c9510c;
+}
+
+
+/* *************End Contact********** */
+
+.footer-copyright {
+    font-size: 15px;
+    font-weight: bold;
+    color: whitesmoke!important;
+}
+
+.footer-copyright a {
+    text-decoration: none;
+}
+
+.typing,
+.typing1,
+.typing2 {
+    color: red!important;
 }
