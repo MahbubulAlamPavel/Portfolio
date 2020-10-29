@@ -71,7 +71,8 @@
                         unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem
                         Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
                         including versions of Lorem Ipsum</p>
-                    <a href="https://drive.google.com/file/d/1ita7RvpGvgHdTZiGN2uFMJGZqAAfQAI-/view?usp=sharing" type="button" class="btn btn-danger btn-lg">Download CV</a>
+                    <a href="https://drive.google.com/file/d/1ita7RvpGvgHdTZiGN2uFMJGZqAAfQAI-/view?usp=sharing"
+                        type="button" class="btn btn-danger btn-lg">Download CV</a>
                 </div>
 
             </div>
@@ -265,26 +266,39 @@
                     </ul>
                 </div>
                 <div class="col-md-6 contact-me">
-                    <h4 class="text-white font-weight-bold">Message me</h4>
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Name" id="usr">
-                    </div>
+                    <form action="{{URL::to('/store')}}" method="post">
+                        <h4 class="text-white font-weight-bold">Message me</h4>
+                        @csrf
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-control" placeholder="Name" id="usr">
+                        </div>
 
-                    <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Email" id="pwd">
-                    </div>
+                        <div class="form-group">
+                            <input type="email" name="email" class="form-control" placeholder="Email" id="pwd">
+                        </div>
 
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Subject" id="usr">
-                    </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" class="form-control" placeholder="Subject" id="usr">
+                        </div>
 
-                    <div class="form-group">
-                        <textarea class="form-control" rows="5" id="comment" placeholder="Message.."></textarea>
-                    </div>
+                        <div class="form-group">
+                            <textarea class="form-control" name="message" rows="5" id="comment"
+                                placeholder="Message.."></textarea>
+                        </div>
 
-                    <div class="form-group">
-                        <button type="submit" class="btn btn-primary">Send message</button>
-                    </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary">Send message</button>
+                        </div>
+
+                        <div class="form-group">
+                            @if($message= Session::get('status')) <div
+                                class="alert alert-success text-center alert-dismissible fade show" role="alert">
+                                <p><strong>Successfully !</strong> {{$message}}</p> <button type="button" class="close"
+                                    data-dismiss="alert" aria-label="Close"> <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div> @endif
+                        </div>
+                    </form>
                 </div>
 
             </div>

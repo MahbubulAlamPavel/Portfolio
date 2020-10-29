@@ -15,3 +15,4 @@ use App\Http\Controllers\mainController;
 */
 
 Route::get('/',[mainController::class,'profile']);
+Route::post('/store',[mainController::class,'store']);
